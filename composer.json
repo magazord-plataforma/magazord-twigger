@@ -1,0 +1,14 @@
+{
+    "name": "magazord/twigger",
+    "autoload": {
+        "psr-4": {
+            "MagaZord\\TwigLint\\" : "src"
+        }
+    },
+    "require": {
+        "twig/twig": "v2.12.1",
+        "symfony/twig-bridge": "4.4",
+        "symfony/console": "4.4",
+        "symfony/finder": "4.4"
+    }
+}
