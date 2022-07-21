@@ -9,7 +9,7 @@ O MagaZord Twigger é uma ferramenta para validação de modelos twig.
 O aplicativo pode ser executado diretamente a partir de sua imagem púbica
 
 ```bash
-docker run --rm --name twigger -v /myapp:/myapp  magazord-twigger /myapp/template.html.twig
+docker run --rm --name twigger -v /myapp:/home/twigger/app  magazord/twigger /myapp/template.html.twig
 ```
 
 #### Extensões
@@ -49,7 +49,7 @@ Para executar o aplicativo considerando extensões, a forma recomendada é a seg
   --name twigger \
   -v /myapp/.config:/addons \
   -v /myapp:/template  \
-  magazord-twigger /template
+  magazord/twigger /template
  ```
 
 Considerando que o caminho `/myapp/.config` corresponda a um diretório que contenha os arquivos de texto com a relação
