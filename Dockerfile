@@ -24,7 +24,8 @@ RUN composer install --optimize-autoloader
 COPY --chown=twigger:twigger . .
 RUN chmod +x /home/$APPUSR/cli/twigger.php
 RUN ln -s /home/$APPUSR/cli/twigger.php /home/$APPUSR/bin/twigger
+RUN ln -s /home/$APPUSR/cli/vendor/bin/* /home/$APPUSR/bin/
 
 FROM build as app
 WORKDIR /home/$APPUSR/app
-ENTRYPOINT ["twigger", "lint:twig"]
+CMD twigger lint:twig
