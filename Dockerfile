@@ -1,9 +1,9 @@
-FROM php:7.1-alpine AS base
+FROM 792740635854.dkr.ecr.sa-east-1.amazonaws.com/magazord-php8 AS base
 
 ENV APPUSR=twigger
 ENV APPGRP=twigger
 
-RUN addgroup -S $APPGRP && adduser -S $APPUSR -G $APPGRP
+RUN adduser -Ur $APPUSR
 RUN mkdir -p /home/$APPUSR && chown -R $APPUSR:$APPGRP /home/$APPUSR
 RUN mkdir -p /home/$APPUSR/bin && chown -R $APPUSR:$APPGRP /home/$APPUSR/bin
 ENV PATH="/home/$APPUSR/bin:$PATH"
@@ -19,7 +19,6 @@ FROM base as build
 RUN mkdir -p /home/$APPUSR/cli && chown -R $APPUSR:$APPGRP /home/$APPUSR/cli
 WORKDIR /home/$APPUSR/cli
 COPY --chown=twigger:twigger composer.json .
-COPY --chown=twigger:twigger composer.lock .
 RUN composer install --optimize-autoloader
 COPY --chown=twigger:twigger . .
 RUN chmod +x /home/$APPUSR/cli/twigger.php

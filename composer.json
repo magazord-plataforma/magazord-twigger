@@ -6,13 +6,13 @@
         }
     },
     "require": {
-        "twig/twig": "v2.12.1",
-        "symfony/twig-bridge": "4.4",
-        "symfony/console": "4.4",
-        "symfony/finder": "4.4",
-        "overtrue/phplint": "^3.2",
+        "twig/twig": "v3.4.1",
+        "symfony/twig-bridge": "v6.0.10",
+        "symfony/console": "v6.0.10",
+        "symfony/finder": "v6.0.8",
+        "overtrue/phplint": "4.3.0",
         "phpstan/phpstan": "^1.4",
         "squizlabs/php_codesniffer": "^3.7",
-        "sebastian/phpcpd": "^4.1"
+        "sebastian/phpcpd": "6.0.3"
     }
 }
