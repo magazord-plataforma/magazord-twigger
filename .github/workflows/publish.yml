@@ -27,8 +27,8 @@ jobs:
 
       - name: Docker Build
         run: |
-          docker build  --target app -t magazord/twigger:latest .
+          docker build  --target app -t magazord/twigger80:latest .
 
       - name: Docker Publish
         run: |
-          docker push magazord/twigger:latest
+          docker push magazord/twigger80:latest

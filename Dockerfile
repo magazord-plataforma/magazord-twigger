@@ -1,9 +1,9 @@
-FROM 792740635854.dkr.ecr.sa-east-1.amazonaws.com/magazord-php8 AS base
+FROM php:8.0-alpine AS base
 
 ENV APPUSR=twigger
 ENV APPGRP=twigger
 
-RUN adduser -Ur $APPUSR
+RUN addgroup -S $APPGRP && adduser -S $APPUSR -G $APPGRP
 RUN mkdir -p /home/$APPUSR && chown -R $APPUSR:$APPGRP /home/$APPUSR
 RUN mkdir -p /home/$APPUSR/bin && chown -R $APPUSR:$APPGRP /home/$APPUSR/bin
 ENV PATH="/home/$APPUSR/bin:$PATH"
