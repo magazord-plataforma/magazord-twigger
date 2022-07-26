@@ -28,4 +28,5 @@ RUN ln -s /home/$APPUSR/cli/vendor/bin/* /home/$APPUSR/bin/
 
 FROM build as app
 WORKDIR /home/$APPUSR/app
-CMD twigger lint:twig
+#CMD twigger lint:twig
+ENTRYPOINT ["twigger", "lint:twig"]
