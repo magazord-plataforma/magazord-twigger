@@ -22,6 +22,7 @@ COPY --chown=twigger:twigger composer.json .
 COPY --chown=twigger:twigger composer.lock .
 RUN composer install --optimize-autoloader
 COPY --chown=twigger:twigger . .
+COPY ./twig /addons
 RUN chmod +x /home/$APPUSR/cli/twigger.php
 RUN ln -s /home/$APPUSR/cli/twigger.php /home/$APPUSR/bin/twigger
 RUN ln -s /home/$APPUSR/cli/vendor/bin/* /home/$APPUSR/bin/
