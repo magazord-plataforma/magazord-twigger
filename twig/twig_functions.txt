@@ -45,3 +45,4 @@ zord_color_brightness
 zord_forma_exibicao_pagamento_produto
 zord_preco_principal_produto
 zord_hint_loading
+zord_text
