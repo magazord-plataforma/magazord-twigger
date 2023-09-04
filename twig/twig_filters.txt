@@ -1,4 +1,5 @@
 zord_image_cdn
+zord_image_product_cdn
 zord_link_tel
 zord_link_whatsapp
 zord_valor
