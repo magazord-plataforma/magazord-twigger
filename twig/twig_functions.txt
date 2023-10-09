@@ -47,3 +47,4 @@ zord_preco_principal_produto
 zord_hint_loading
 zord_text
 zord_condicao_parcelamento_produto
+zord_resource_image
