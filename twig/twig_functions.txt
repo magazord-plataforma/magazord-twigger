@@ -9,6 +9,7 @@ zord_tag_produto
 zord_tag_produto_as_json
 zord_nota_star
 zord_midia_url
+zord_host_image
 zord_midia_tamanho
 zord_frontend_s3
 zord_repository
