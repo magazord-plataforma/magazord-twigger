@@ -6,6 +6,7 @@ zord_link_target
 zord_link_produto
 zord_midia_url_embed_you_tube
 zord_tag_produto
+zord_tag_produto_as_json
 zord_nota_star
 zord_midia_url
 zord_midia_tamanho
