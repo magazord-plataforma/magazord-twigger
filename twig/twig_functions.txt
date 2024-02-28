@@ -53,3 +53,4 @@ zord_condicao_parcelamento_produto
 zord_resource_image
 zord_plugin_ativo
 zord_midia_carac_produto
+zord_midia_size
