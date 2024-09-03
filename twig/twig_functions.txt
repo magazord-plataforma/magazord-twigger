@@ -55,3 +55,4 @@ zord_plugin_ativo
 zord_midia_carac_produto
 zord_midia_size
 zord_schema_json
+zord_extract_query_param
