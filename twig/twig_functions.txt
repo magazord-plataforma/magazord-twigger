@@ -31,6 +31,7 @@ zord_selo_trustvox
 zord_host_site
 zord_logo
 zord_caracteristicas_produto
+zord_caracteristicas_produto_conjunto
 zord_midia_url_you_tube
 web_path
 zord_text_convert
